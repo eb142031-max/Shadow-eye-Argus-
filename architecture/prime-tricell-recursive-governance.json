@@ -1,0 +1,98 @@
+{
+  "schemaVersion": "1.0.0",
+  "architectureName": "EYE-TRI IMPERIUM",
+  "governanceStatus": "prime",
+  "model": "recursive-tricell-lou-shu",
+  "topLevelDomain": {
+    "primeStatus": true,
+    "mandalaCount": 3,
+    "microMandalaCountPerMandala": 9,
+    "layout": "lou-shu-3x3",
+    "recursiveTrainingProtocol": {
+      "enabled": true,
+      "loop": [
+        "intake",
+        "classify",
+        "teach",
+        "practice",
+        "assess",
+        "referee-review",
+        "capture-lessons",
+        "update-vault-and-forge",
+        "retrain-and-reassess"
+      ],
+      "promotionRequires": [
+        "documented-competency",
+        "evidence-linked-assessment",
+        "independent-review",
+        "versioned-curriculum-and-method"
+      ],
+      "humanAuthorityRequiredFor": [
+        "case-authorization",
+        "evidence-collection",
+        "evidence-disposition",
+        "external-disclosure",
+        "final-case-determination"
+      ]
+    }
+  },
+  "mandalas": [
+    {
+      "id": "argus-governance",
+      "prime": true,
+      "microMandalaCount": 9,
+      "louShuCells": [
+        {"position":1,"id":"case-lead","role":"accountable-case-direction"},
+        {"position":2,"id":"specialist","role":"technical-domain-examination"},
+        {"position":3,"id":"referee","role":"independent-challenge-and-review"},
+        {"position":4,"id":"authority-and-scope","role":"jurisdiction-authorization-and-scope-control"},
+        {"position":5,"id":"decision-record","role":"reasoned-decision-and-risk-record"},
+        {"position":6,"id":"quality-assurance","role":"method-and-output-quality"},
+        {"position":7,"id":"permissions","role":"least-privilege-and-separation-of-duties"},
+        {"position":8,"id":"audit-and-accountability","role":"append-only-audit-and-responsibility"},
+        {"position":9,"id":"release-and-closure","role":"human-approved-release-and-closure"}
+      ]
+    },
+    {
+      "id": "investigative-operations",
+      "prime": true,
+      "microMandalaCount": 9,
+      "louShuCells": [
+        {"position":1,"id":"case-and-evidence","role":"intake-preservation-indexing-and-custody"},
+        {"position":2,"id":"reconstruction","role":"timeline-event-and-spatial-reconstruction"},
+        {"position":3,"id":"presentation","role":"reports-exhibits-and-briefings"},
+        {"position":4,"id":"acquisition-and-triage","role":"authorized-collection-and-triage"},
+        {"position":5,"id":"examination","role":"repeatable-technical-examination"},
+        {"position":6,"id":"correlation","role":"cross-source-correlation-and-hypothesis-testing"},
+        {"position":7,"id":"working-copy-control","role":"verified-analysis-copy-management"},
+        {"position":8,"id":"peer-review","role":"independent-technical-review"},
+        {"position":9,"id":"case-archive","role":"controlled-retention-and-closure"}
+      ]
+    },
+    {
+      "id": "knowledge-and-production",
+      "prime": true,
+      "microMandalaCount": 9,
+      "louShuCells": [
+        {"position":1,"id":"vault","role":"approved-knowledge-and-provenance"},
+        {"position":2,"id":"forge","role":"validated-methods-workflows-and-playbooks"},
+        {"position":3,"id":"persona","role":"scoped-specialist-assistants"},
+        {"position":4,"id":"intake-and-classification","role":"knowledge-acquisition-and-routing"},
+        {"position":5,"id":"curriculum-and-skills","role":"competency-mapping-and-learning-paths"},
+        {"position":6,"id":"tool-registry","role":"tool-version-validation-and-capability-registry"},
+        {"position":7,"id":"simulation-lab","role":"synthetic-fixtures-and-safe-practice"},
+        {"position":8,"id":"assessment-and-reflection","role":"competency-evidence-and-lessons-learned"},
+        {"position":9,"id":"recursive-training-loop","role":"retrain-reassess-and-versioned-improvement"}
+      ]
+    }
+  ],
+  "recursionRule": {
+    "eachTopLevelDomainHasPrimeStatus": true,
+    "eachPrimeDomainContainsThreeMandalas": true,
+    "eachMandalaContainsNineMicroMandalas": true,
+    "eachMandalaUsesLouShu3x3": true,
+    "childDomainsInheritGovernanceButNotUnboundedAuthority": true,
+    "childInstancesMustDeclareOwnerScopePermissionsAndEscalationPath": true,
+    "noAutomaticPromotionToPrimeWithoutHumanRatification": true
+  }
+}
