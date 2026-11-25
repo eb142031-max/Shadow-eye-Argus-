@@ -1,0 +1,13 @@
+{
+  "schemaVersion": "1.0.0",
+  "status": "initial-catalogue-not-operationally-validated",
+  "tools": [
+    {"id":"autopsy","name":"Autopsy","category":"disk-forensics","purpose":"Filesystem and disk-image examination","integration":"controlled-working-copy","validationStatus":"not-validated"},
+    {"id":"kape","name":"KAPE","category":"endpoint-triage","purpose":"Targeted endpoint artifact collection and processing","integration":"authorized-collection-profile","validationStatus":"not-validated"},
+    {"id":"volatility","name":"Volatility","category":"memory-forensics","purpose":"Memory image analysis","integration":"controlled-working-copy","validationStatus":"not-validated"},
+    {"id":"velociraptor","name":"Velociraptor","category":"endpoint-response","purpose":"Authorized endpoint collection and response","integration":"scoped-agent-and-approval-required","validationStatus":"not-validated"},
+    {"id":"ftk-imager","name":"FTK Imager","category":"acquisition","purpose":"Forensic imaging and preview","integration":"acquisition-workstation-only","validationStatus":"not-validated"},
+    {"id":"redline","name":"Redline","category":"endpoint-triage","purpose":"Endpoint triage and analysis","integration":"controlled-working-copy","validationStatus":"not-validated"},
+    {"id":"blender","name":"Blender","category":"reconstruction-presentation","purpose":"Derived 3D reconstruction and exhibit rendering","integration":"sanitized-scene-manifest-only","validationStatus":"not-validated"}
+  ]
+}
